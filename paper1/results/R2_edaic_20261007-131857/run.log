@@ -1,0 +1,106 @@
+R2_edaic_20261007-131857 | commit bfe1a6610a | 218 participants | 12149 chunks | 140 steps | device cuda
+PHQ-8 mean 6.66  median 5.00  SD 6.01
+capacity F2: late 15,363 vs early (h=42) 15,584  gap 1.4%
+capacity F3: late 21,060 vs early (h=49) 20,875  gap 0.9%
+
+  run  1/50  median_predictor=4.84  mean_predictor=5.14  functionals_ridge=5.02  au_only=4.79  gaze_only=5.12  pose_only=5.27  late_F2=4.89  early_F2=4.98  late_F3=4.94  early_F3=5.07  [57s]
+  run  2/50  median_predictor=5.57  mean_predictor=4.99  functionals_ridge=4.91  au_only=5.05  gaze_only=5.06  pose_only=5.37  late_F2=5.12  early_F2=5.12  late_F3=5.28  early_F3=5.19  [113s]
+  run  3/50  median_predictor=4.48  mean_predictor=4.56  functionals_ridge=4.52  au_only=4.67  gaze_only=4.84  pose_only=4.40  late_F2=4.76  early_F2=4.79  late_F3=4.92  early_F3=5.16  [175s]
+  run  4/50  median_predictor=4.79  mean_predictor=5.21  functionals_ridge=5.05  au_only=4.73  gaze_only=5.03  pose_only=4.53  late_F2=4.71  early_F2=4.79  late_F3=4.81  early_F3=4.93  [215s]
+  run  5/50  median_predictor=5.60  mean_predictor=5.37  functionals_ridge=5.50  au_only=5.65  gaze_only=5.80  pose_only=5.56  late_F2=5.72  early_F2=5.64  late_F3=5.68  early_F3=5.71  [260s]
+  run  6/50  median_predictor=4.41  mean_predictor=4.35  functionals_ridge=4.35  au_only=4.47  gaze_only=4.46  pose_only=4.39  late_F2=4.46  early_F2=4.59  late_F3=4.42  early_F3=4.54  [300s]
+  run  7/50  median_predictor=4.86  mean_predictor=4.68  functionals_ridge=4.47  au_only=4.57  gaze_only=4.88  pose_only=4.90  late_F2=4.51  early_F2=4.65  late_F3=4.80  early_F3=4.70  [347s]
+  run  8/50  median_predictor=5.00  mean_predictor=5.19  functionals_ridge=5.20  au_only=4.89  gaze_only=5.02  pose_only=5.01  late_F2=5.03  early_F2=5.17  late_F3=4.94  early_F3=5.06  [388s]
+  run  9/50  median_predictor=5.28  mean_predictor=5.52  functionals_ridge=5.42  au_only=5.01  gaze_only=5.58  pose_only=5.29  late_F2=5.03  early_F2=5.62  late_F3=5.24  early_F3=5.04  [433s]
+  run 10/50  median_predictor=5.16  mean_predictor=5.32  functionals_ridge=5.32  au_only=5.42  gaze_only=5.19  pose_only=5.31  late_F2=5.26  early_F2=5.61  late_F3=5.32  early_F3=5.54  [477s]
+  run 11/50  median_predictor=4.73  mean_predictor=4.73  functionals_ridge=4.58  au_only=4.51  gaze_only=4.76  pose_only=4.75  late_F2=4.40  early_F2=4.71  late_F3=4.53  early_F3=4.65  [514s]
+  run 12/50  median_predictor=4.84  mean_predictor=5.10  functionals_ridge=5.12  au_only=4.66  gaze_only=5.04  pose_only=5.36  late_F2=4.74  early_F2=4.66  late_F3=4.90  early_F3=4.84  [552s]
+  run 13/50  median_predictor=4.11  mean_predictor=4.57  functionals_ridge=4.70  au_only=4.37  gaze_only=4.11  pose_only=4.12  late_F2=4.35  early_F2=4.29  late_F3=4.21  early_F3=4.26  [587s]
+  run 14/50  median_predictor=6.49  mean_predictor=6.32  functionals_ridge=6.29  au_only=6.38  gaze_only=6.32  pose_only=6.30  late_F2=6.39  early_F2=6.20  late_F3=6.77  early_F3=6.12  [633s]
+  run 15/50  median_predictor=4.60  mean_predictor=4.52  functionals_ridge=4.43  au_only=4.83  gaze_only=4.60  pose_only=4.67  late_F2=4.59  early_F2=5.22  late_F3=4.59  early_F3=4.50  [683s]
+  run 16/50  median_predictor=5.27  mean_predictor=5.40  functionals_ridge=5.28  au_only=5.13  gaze_only=5.33  pose_only=5.22  late_F2=5.16  early_F2=5.15  late_F3=5.24  early_F3=5.05  [736s]
+  run 17/50  median_predictor=4.52  mean_predictor=4.40  functionals_ridge=4.19  au_only=4.16  gaze_only=4.51  pose_only=4.48  late_F2=4.30  early_F2=4.28  late_F3=4.28  early_F3=4.68  [784s]
+  run 18/50  median_predictor=5.91  mean_predictor=5.95  functionals_ridge=6.12  au_only=5.80  gaze_only=6.06  pose_only=6.00  late_F2=5.87  early_F2=5.77  late_F3=5.92  early_F3=5.81  [823s]
+  run 19/50  median_predictor=3.58  mean_predictor=3.66  functionals_ridge=3.60  au_only=4.48  gaze_only=3.62  pose_only=3.56  late_F2=3.67  early_F2=3.96  late_F3=4.34  early_F3=3.87  [866s]
+  run 20/50  median_predictor=5.37  mean_predictor=5.58  functionals_ridge=5.58  au_only=5.29  gaze_only=5.38  pose_only=5.37  late_F2=5.28  early_F2=5.25  late_F3=5.56  early_F3=5.27  [909s]
+  run 21/50  median_predictor=6.14  mean_predictor=6.32  functionals_ridge=6.15  au_only=6.15  gaze_only=6.09  pose_only=6.28  late_F2=5.95  early_F2=6.10  late_F3=6.23  early_F3=5.98  [963s]
+  run 22/50  median_predictor=3.93  mean_predictor=4.36  functionals_ridge=4.28  au_only=3.90  gaze_only=4.00  pose_only=4.87  late_F2=4.01  early_F2=3.91  late_F3=3.99  early_F3=3.89  [1004s]
+  run 23/50  median_predictor=4.27  mean_predictor=4.42  functionals_ridge=4.36  au_only=4.44  gaze_only=4.17  pose_only=4.71  late_F2=4.54  early_F2=4.24  late_F3=4.22  early_F3=4.48  [1048s]
+  run 24/50  median_predictor=5.88  mean_predictor=4.94  functionals_ridge=4.91  au_only=5.33  gaze_only=5.63  pose_only=5.97  late_F2=5.09  early_F2=5.55  late_F3=5.47  early_F3=6.11  [1100s]
+  run 25/50  median_predictor=5.02  mean_predictor=5.24  functionals_ridge=5.23  au_only=5.61  gaze_only=5.65  pose_only=5.51  late_F2=5.97  early_F2=5.50  late_F3=5.62  early_F3=5.60  [1186s]
+  run 26/50  median_predictor=5.02  mean_predictor=4.95  functionals_ridge=4.83  au_only=4.80  gaze_only=5.03  pose_only=5.06  late_F2=4.94  early_F2=4.71  late_F3=4.89  early_F3=4.57  [1226s]
+  run 27/50  median_predictor=5.00  mean_predictor=5.27  functionals_ridge=5.20  au_only=5.49  gaze_only=5.21  pose_only=5.07  late_F2=5.15  early_F2=5.60  late_F3=5.36  early_F3=5.41  [1269s]
+  run 28/50  median_predictor=4.48  mean_predictor=4.37  functionals_ridge=4.54  au_only=4.38  gaze_only=4.59  pose_only=4.42  late_F2=4.72  early_F2=4.55  late_F3=4.37  early_F3=4.46  [1307s]
+  run 29/50  median_predictor=5.56  mean_predictor=5.50  functionals_ridge=5.68  au_only=6.30  gaze_only=5.54  pose_only=5.54  late_F2=6.25  early_F2=6.04  late_F3=5.91  early_F3=5.95  [1371s]
+  run 30/50  median_predictor=4.70  mean_predictor=4.99  functionals_ridge=4.84  au_only=4.61  gaze_only=4.84  pose_only=4.76  late_F2=4.79  early_F2=4.67  late_F3=4.83  early_F3=4.92  [1412s]
+  run 31/50  median_predictor=5.64  mean_predictor=5.47  functionals_ridge=5.38  au_only=5.26  gaze_only=5.63  pose_only=5.43  late_F2=5.33  early_F2=5.29  late_F3=5.08  early_F3=5.02  [1452s]
+  run 32/50  median_predictor=4.00  mean_predictor=4.15  functionals_ridge=4.36  au_only=4.57  gaze_only=4.10  pose_only=4.58  late_F2=4.34  early_F2=4.51  late_F3=4.66  early_F3=4.20  [1502s]
+  run 33/50  median_predictor=5.68  mean_predictor=5.88  functionals_ridge=5.52  au_only=5.55  gaze_only=5.99  pose_only=5.83  late_F2=5.68  early_F2=5.62  late_F3=5.71  early_F3=5.61  [1543s]
+  run 34/50  median_predictor=4.58  mean_predictor=4.91  functionals_ridge=4.81  au_only=5.08  gaze_only=4.89  pose_only=4.85  late_F2=5.27  early_F2=5.49  late_F3=4.88  early_F3=4.77  [1597s]
+  run 35/50  median_predictor=4.56  mean_predictor=4.63  functionals_ridge=4.58  au_only=5.29  gaze_only=4.56  pose_only=4.60  late_F2=4.29  early_F2=4.93  late_F3=4.44  early_F3=4.48  [1641s]
+  run 36/50  median_predictor=4.34  mean_predictor=4.51  functionals_ridge=4.80  au_only=4.74  gaze_only=4.56  pose_only=4.91  late_F2=4.60  early_F2=4.95  late_F3=5.01  early_F3=5.25  [1707s]
+  run 37/50  median_predictor=5.05  mean_predictor=5.20  functionals_ridge=5.14  au_only=4.93  gaze_only=5.54  pose_only=5.32  late_F2=5.22  early_F2=5.24  late_F3=5.25  early_F3=5.18  [1746s]
+  run 38/50  median_predictor=4.48  mean_predictor=4.54  functionals_ridge=4.87  au_only=4.44  gaze_only=4.47  pose_only=4.53  late_F2=5.13  early_F2=4.48  late_F3=5.37  early_F3=4.59  [1798s]
+  run 39/50  median_predictor=6.00  mean_predictor=6.05  functionals_ridge=5.98  au_only=5.79  gaze_only=6.03  pose_only=6.08  late_F2=5.82  early_F2=5.92  late_F3=5.88  early_F3=6.28  [1838s]
+  run 40/50  median_predictor=4.63  mean_predictor=4.71  functionals_ridge=4.49  au_only=5.07  gaze_only=4.61  pose_only=4.63  late_F2=4.96  early_F2=4.33  late_F3=4.41  early_F3=4.35  [1897s]
+  run 41/50  median_predictor=4.57  mean_predictor=4.84  functionals_ridge=4.63  au_only=4.73  gaze_only=4.97  pose_only=4.96  late_F2=5.00  early_F2=4.85  late_F3=4.84  early_F3=4.87  [1937s]
+  run 42/50  median_predictor=3.95  mean_predictor=3.86  functionals_ridge=3.82  au_only=3.61  gaze_only=4.03  pose_only=4.17  late_F2=3.78  early_F2=3.65  late_F3=4.14  early_F3=4.58  [1984s]
+  run 43/50  median_predictor=6.36  mean_predictor=5.77  functionals_ridge=5.83  au_only=6.06  gaze_only=6.22  pose_only=6.22  late_F2=6.10  early_F2=6.59  late_F3=6.04  early_F3=6.10  [2044s]
+  run 44/50  median_predictor=5.07  mean_predictor=5.28  functionals_ridge=5.24  au_only=5.03  gaze_only=5.17  pose_only=5.11  late_F2=5.02  early_F2=5.11  late_F3=4.97  early_F3=5.04  [2088s]
+  run 45/50  median_predictor=5.21  mean_predictor=5.41  functionals_ridge=5.30  au_only=5.24  gaze_only=5.24  pose_only=5.32  late_F2=5.16  early_F2=5.24  late_F3=5.20  early_F3=5.32  [2132s]
+  run 46/50  median_predictor=4.75  mean_predictor=4.81  functionals_ridge=4.74  au_only=4.68  gaze_only=4.80  pose_only=5.35  late_F2=4.83  early_F2=4.66  late_F3=4.96  early_F3=4.88  [2179s]
+  run 47/50  median_predictor=6.27  mean_predictor=6.16  functionals_ridge=6.17  au_only=6.08  gaze_only=6.28  pose_only=6.24  late_F2=6.02  early_F2=5.96  late_F3=6.03  early_F3=6.09  [2222s]
+  run 48/50  median_predictor=4.66  mean_predictor=4.88  functionals_ridge=4.92  au_only=4.67  gaze_only=4.79  pose_only=4.60  late_F2=4.73  early_F2=4.81  late_F3=4.65  early_F3=4.78  [2268s]
+  run 49/50  median_predictor=4.70  mean_predictor=4.54  functionals_ridge=4.43  au_only=4.25  gaze_only=4.81  pose_only=4.87  late_F2=4.42  early_F2=4.40  late_F3=4.52  early_F3=4.21  [2317s]
+  run 50/50  median_predictor=4.30  mean_predictor=4.74  functionals_ridge=4.61  au_only=4.42  gaze_only=5.06  pose_only=4.61  late_F2=4.54  early_F2=4.63  late_F3=4.61  early_F3=4.63  [2361s]
+
+Subgroups by gender (descriptive only, no tests): pooled MAE | pooled R2, mean over repeats
+  median_predictor   female (n=92): 5.365 | -0.126   male (n=126): 4.671 | -0.065
+  functionals_ridge  female (n=92): 5.132 | +0.014   male (n=126): 4.877 | -0.042
+  early_F3           female (n=92): 5.184 | -0.038   male (n=126): 4.919 | -0.132
+  late_F3            female (n=92): 5.233 | -0.066   male (n=126): 4.905 | -0.124
+
+model              MAE              RMSE             R2 (fold)        R2 (pooled)
+median_predictor    4.965 ± 0.671    6.192 ± 0.884   -0.107 ± 0.127   -0.088 ± 0.022
+mean_predictor      5.025 ± 0.601    5.992 ± 0.719   -0.039 ± 0.063   -0.013 ± 0.008
+functionals_ridge   4.986 ± 0.602    5.984 ± 0.726   -0.037 ± 0.079   -0.010 ± 0.014
+au_only             4.987 ± 0.617    6.156 ± 0.753   -0.103 ± 0.153   -0.069 ± 0.042
+gaze_only           5.064 ± 0.644    6.197 ± 0.817   -0.110 ± 0.108   -0.086 ± 0.030
+pose_only           5.085 ± 0.613    6.248 ± 0.821   -0.132 ± 0.141   -0.105 ± 0.050
+late_F2             4.997 ± 0.623    6.179 ± 0.767   -0.108 ± 0.119   -0.078 ± 0.044
+early_F2            5.040 ± 0.638    6.191 ± 0.806   -0.113 ± 0.141   -0.084 ± 0.040
+late_F3             5.045 ± 0.610    6.214 ± 0.795   -0.122 ± 0.141   -0.091 ± 0.035
+early_F3            5.032 ± 0.610    6.190 ± 0.775   -0.116 ± 0.163   -0.082 ± 0.060
+
+Only [primary] is confirmatory; every other test is uncorrected and read descriptively (§5).
+[primary] early_F3 vs late_F3: ΔMAE +0.013 [95% CI -0.256, +0.283]  t(49) = 0.10, p = 0.9224  (early_F3 better in 23/50)
+[secondary] early_F2 vs late_F2: ΔMAE -0.042 [95% CI -0.332, +0.248]  t(49) = -0.29, p = 0.7703  (early_F2 better in 24/50)
+[baseline] early_F2 vs median_predictor: ΔMAE -0.075 [95% CI -0.398, +0.247]  t(49) = -0.47, p = 0.6413  (early_F2 better in 23/50)
+[baseline] late_F2 vs median_predictor: ΔMAE -0.033 [95% CI -0.361, +0.296]  t(49) = -0.20, p = 0.8416  (late_F2 better in 24/50)
+[baseline] early_F3 vs median_predictor: ΔMAE -0.067 [95% CI -0.385, +0.251]  t(49) = -0.42, p = 0.6731  (early_F3 better in 22/50)
+[baseline] late_F3 vs median_predictor: ΔMAE -0.080 [95% CI -0.389, +0.229]  t(49) = -0.52, p = 0.6041  (late_F3 better in 22/50)
+[baseline] functionals_ridge vs median_predictor: ΔMAE -0.021 [95% CI -0.318, +0.276]  t(49) = -0.14, p = 0.8870  (functionals_ridge better in 19/50)
+[baseline] au_only vs median_predictor: ΔMAE -0.022 [95% CI -0.370, +0.325]  t(49) = -0.13, p = 0.8978  (au_only better in 29/50)
+[baseline] gaze_only vs median_predictor: ΔMAE -0.100 [95% CI -0.316, +0.117]  t(49) = -0.92, p = 0.3606  (gaze_only better in 12/50)
+[baseline] pose_only vs median_predictor: ΔMAE -0.121 [95% CI -0.373, +0.132]  t(49) = -0.96, p = 0.3423  (pose_only better in 16/50)
+[ablation] early_F2 vs au_only: ΔMAE -0.053 [95% CI -0.293, +0.187]  t(49) = -0.44, p = 0.6599  (early_F2 better in 18/50)
+[ablation] early_F3 vs early_F2: ΔMAE +0.008 [95% CI -0.296, +0.312]  t(49) = 0.05, p = 0.9573  (early_F3 better in 27/50)
+[ablation] late_F2 vs au_only: ΔMAE -0.011 [95% CI -0.279, +0.258]  t(49) = -0.08, p = 0.9376  (late_F2 better in 20/50)
+[ablation] late_F3 vs late_F2: ΔMAE -0.047 [95% CI -0.290, +0.196]  t(49) = -0.39, p = 0.6968  (late_F3 better in 18/50)
+
+Sensitivity analysis: median of chunk predictions instead of the mean
+  early_F3 vs late_F3: ΔMAE -0.017 [95% CI -0.368, +0.335]  p = 0.9241  (same verdict)
+  early_F2 vs late_F2: ΔMAE -0.061 [95% CI -0.432, +0.309]  p = 0.7411  (same verdict)
+  early_F2 vs median_predictor: ΔMAE -0.131 [95% CI -0.524, +0.262]  p = 0.5071  (same verdict)
+  late_F2 vs median_predictor: ΔMAE -0.070 [95% CI -0.463, +0.324]  p = 0.7237  (same verdict)
+  early_F3 vs median_predictor: ΔMAE -0.124 [95% CI -0.502, +0.253]  p = 0.5114  (same verdict)
+  late_F3 vs median_predictor: ΔMAE -0.108 [95% CI -0.451, +0.236]  p = 0.5322  (same verdict)
+  au_only vs median_predictor: ΔMAE -0.056 [95% CI -0.459, +0.347]  p = 0.7819  (same verdict)
+  gaze_only vs median_predictor: ΔMAE -0.124 [95% CI -0.357, +0.110]  p = 0.2929  (same verdict)
+  pose_only vs median_predictor: ΔMAE -0.189 [95% CI -0.481, +0.103]  p = 0.1999  (same verdict)
+  early_F2 vs au_only: ΔMAE -0.075 [95% CI -0.358, +0.208]  p = 0.5965  (same verdict)
+  early_F3 vs early_F2: ΔMAE +0.006 [95% CI -0.401, +0.414]  p = 0.9746  (same verdict)
+  late_F2 vs au_only: ΔMAE -0.014 [95% CI -0.365, +0.337]  p = 0.9376  (same verdict)
+  late_F3 vs late_F2: ΔMAE -0.038 [95% CI -0.328, +0.252]  p = 0.7938  (same verdict)
+
+wrote /home/muchiri/Projects/augmenting-mh-assessment/paper1/results/R2_edaic_20261007-131857

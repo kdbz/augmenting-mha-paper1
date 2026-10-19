@@ -1,0 +1,78 @@
+R4_edaic_20261007-145409 | commit 82cf233d20 | 218 participants | 12149 chunks | 140 steps | device cuda
+PHQ-8 mean 6.66  median 5.00  SD 6.01
+capacity F2: late 36,997 vs early (h=42) 36,543  gap 1.2%
+capacity F3: late 51,527 vs early (h=51) 52,329  gap 1.6%
+
+  run  1/50  median_predictor=4.84  mean_predictor=5.14  functionals_ridge=5.02  late_F3=4.85  early_F3=4.79  [39s]
+  run  2/50  median_predictor=5.57  mean_predictor=4.99  functionals_ridge=4.91  late_F3=5.08  early_F3=5.40  [76s]
+  run  3/50  median_predictor=4.48  mean_predictor=4.56  functionals_ridge=4.52  late_F3=4.63  early_F3=4.70  [123s]
+  run  4/50  median_predictor=4.79  mean_predictor=5.21  functionals_ridge=5.05  late_F3=4.71  early_F3=4.89  [165s]
+  run  5/50  median_predictor=5.60  mean_predictor=5.37  functionals_ridge=5.50  late_F3=5.78  early_F3=5.79  [220s]
+  run  6/50  median_predictor=4.41  mean_predictor=4.35  functionals_ridge=4.35  late_F3=4.51  early_F3=4.48  [256s]
+  run  7/50  median_predictor=4.86  mean_predictor=4.68  functionals_ridge=4.47  late_F3=4.80  early_F3=4.79  [289s]
+  run  8/50  median_predictor=5.00  mean_predictor=5.19  functionals_ridge=5.20  late_F3=4.92  early_F3=4.94  [323s]
+  run  9/50  median_predictor=5.28  mean_predictor=5.52  functionals_ridge=5.42  late_F3=5.28  early_F3=5.25  [344s]
+  run 10/50  median_predictor=5.16  mean_predictor=5.32  functionals_ridge=5.32  late_F3=5.75  early_F3=5.31  [395s]
+  run 11/50  median_predictor=4.73  mean_predictor=4.73  functionals_ridge=4.58  late_F3=4.36  early_F3=4.57  [439s]
+  run 12/50  median_predictor=4.84  mean_predictor=5.10  functionals_ridge=5.12  late_F3=5.04  early_F3=5.42  [490s]
+  run 13/50  median_predictor=4.11  mean_predictor=4.57  functionals_ridge=4.70  late_F3=4.11  early_F3=4.10  [511s]
+  run 14/50  median_predictor=6.49  mean_predictor=6.32  functionals_ridge=6.29  late_F3=6.34  early_F3=6.27  [536s]
+  run 15/50  median_predictor=4.60  mean_predictor=4.52  functionals_ridge=4.43  late_F3=4.68  early_F3=4.59  [567s]
+  run 16/50  median_predictor=5.27  mean_predictor=5.40  functionals_ridge=5.28  late_F3=5.28  early_F3=5.25  [587s]
+  run 17/50  median_predictor=4.52  mean_predictor=4.40  functionals_ridge=4.19  late_F3=4.16  early_F3=4.34  [625s]
+  run 18/50  median_predictor=5.91  mean_predictor=5.95  functionals_ridge=6.12  late_F3=5.91  early_F3=5.88  [650s]
+  run 19/50  median_predictor=3.58  mean_predictor=3.66  functionals_ridge=3.60  late_F3=3.94  early_F3=3.82  [690s]
+  run 20/50  median_predictor=5.37  mean_predictor=5.58  functionals_ridge=5.58  late_F3=5.17  early_F3=5.11  [730s]
+  run 21/50  median_predictor=6.14  mean_predictor=6.32  functionals_ridge=6.15  late_F3=5.73  early_F3=6.11  [778s]
+  run 22/50  median_predictor=3.93  mean_predictor=4.36  functionals_ridge=4.28  late_F3=3.85  early_F3=3.90  [815s]
+  run 23/50  median_predictor=4.27  mean_predictor=4.42  functionals_ridge=4.36  late_F3=4.36  early_F3=4.78  [864s]
+  run 24/50  median_predictor=5.88  mean_predictor=4.94  functionals_ridge=4.91  late_F3=5.85  early_F3=5.85  [904s]
+  run 25/50  median_predictor=5.02  mean_predictor=5.24  functionals_ridge=5.23  late_F3=5.26  early_F3=5.96  [970s]
+  run 26/50  median_predictor=5.02  mean_predictor=4.95  functionals_ridge=4.83  late_F3=5.08  early_F3=5.18  [995s]
+  run 27/50  median_predictor=5.00  mean_predictor=5.27  functionals_ridge=5.20  late_F3=4.98  early_F3=4.97  [1015s]
+  run 28/50  median_predictor=4.48  mean_predictor=4.37  functionals_ridge=4.54  late_F3=4.43  early_F3=4.41  [1035s]
+  run 29/50  median_predictor=5.56  mean_predictor=5.50  functionals_ridge=5.68  late_F3=5.85  early_F3=5.96  [1074s]
+  run 30/50  median_predictor=4.70  mean_predictor=4.99  functionals_ridge=4.84  late_F3=5.39  early_F3=4.89  [1119s]
+  run 31/50  median_predictor=5.64  mean_predictor=5.47  functionals_ridge=5.38  late_F3=5.39  early_F3=5.57  [1156s]
+  run 32/50  median_predictor=4.00  mean_predictor=4.15  functionals_ridge=4.36  late_F3=4.23  early_F3=4.50  [1205s]
+  run 33/50  median_predictor=5.68  mean_predictor=5.88  functionals_ridge=5.52  late_F3=5.61  early_F3=5.55  [1246s]
+  run 34/50  median_predictor=4.58  mean_predictor=4.91  functionals_ridge=4.81  late_F3=5.29  early_F3=5.41  [1314s]
+  run 35/50  median_predictor=4.56  mean_predictor=4.63  functionals_ridge=4.58  late_F3=4.57  early_F3=4.32  [1342s]
+  run 36/50  median_predictor=4.34  mean_predictor=4.51  functionals_ridge=4.80  late_F3=5.47  early_F3=5.09  [1423s]
+  run 37/50  median_predictor=5.05  mean_predictor=5.20  functionals_ridge=5.14  late_F3=5.05  early_F3=5.04  [1443s]
+  run 38/50  median_predictor=4.48  mean_predictor=4.54  functionals_ridge=4.87  late_F3=4.53  early_F3=4.64  [1478s]
+  run 39/50  median_predictor=6.00  mean_predictor=6.05  functionals_ridge=5.98  late_F3=5.94  early_F3=5.98  [1509s]
+  run 40/50  median_predictor=4.63  mean_predictor=4.71  functionals_ridge=4.49  late_F3=4.32  early_F3=4.37  [1554s]
+  run 41/50  median_predictor=4.57  mean_predictor=4.84  functionals_ridge=4.63  late_F3=4.64  early_F3=4.70  [1580s]
+  run 42/50  median_predictor=3.95  mean_predictor=3.86  functionals_ridge=3.82  late_F3=3.90  early_F3=3.93  [1612s]
+  run 43/50  median_predictor=6.36  mean_predictor=5.77  functionals_ridge=5.83  late_F3=6.64  early_F3=6.12  [1673s]
+  run 44/50  median_predictor=5.07  mean_predictor=5.28  functionals_ridge=5.24  late_F3=5.05  early_F3=5.04  [1694s]
+  run 45/50  median_predictor=5.21  mean_predictor=5.41  functionals_ridge=5.30  late_F3=5.21  early_F3=5.21  [1714s]
+  run 46/50  median_predictor=4.75  mean_predictor=4.81  functionals_ridge=4.74  late_F3=4.75  early_F3=4.73  [1737s]
+  run 47/50  median_predictor=6.27  mean_predictor=6.16  functionals_ridge=6.17  late_F3=6.26  early_F3=6.22  [1758s]
+  run 48/50  median_predictor=4.66  mean_predictor=4.88  functionals_ridge=4.92  late_F3=4.80  early_F3=5.21  [1810s]
+  run 49/50  median_predictor=4.70  mean_predictor=4.54  functionals_ridge=4.43  late_F3=4.71  early_F3=4.68  [1833s]
+  run 50/50  median_predictor=4.30  mean_predictor=4.74  functionals_ridge=4.61  late_F3=4.47  early_F3=4.49  [1860s]
+
+Subgroups by gender (descriptive only, no tests): pooled MAE | pooled R2, mean over repeats
+  median_predictor   female (n=92): 5.365 | -0.126   male (n=126): 4.671 | -0.065
+  functionals_ridge  female (n=92): 5.132 | +0.014   male (n=126): 4.877 | -0.042
+  early_F3           female (n=92): 5.319 | -0.105   male (n=126): 4.852 | -0.133
+  late_F3            female (n=92): 5.291 | -0.098   male (n=126): 4.817 | -0.102
+
+model              MAE              RMSE             R2 (fold)        R2 (pooled)
+median_predictor    4.965 ± 0.671    6.192 ± 0.884   -0.107 ± 0.127   -0.088 ± 0.022
+mean_predictor      5.025 ± 0.601    5.992 ± 0.719   -0.039 ± 0.063   -0.013 ± 0.008
+functionals_ridge   4.986 ± 0.602    5.984 ± 0.726   -0.037 ± 0.079   -0.010 ± 0.014
+late_F3             5.018 ± 0.658    6.216 ± 0.858   -0.119 ± 0.142   -0.095 ± 0.024
+early_F3            5.050 ± 0.637    6.273 ± 0.848   -0.139 ± 0.134   -0.114 ± 0.040
+
+Only [primary] is confirmatory; every other test is uncorrected and read descriptively (§5).
+[primary] early_F3 vs late_F3: ΔMAE -0.032 [95% CI -0.263, +0.200]  t(49) = -0.27, p = 0.7855  (early_F3 better in 26/50)
+[baseline] early_F3 vs median_predictor: ΔMAE -0.085 [95% CI -0.377, +0.206]  t(49) = -0.59, p = 0.5595  (early_F3 better in 31/50)
+[baseline] late_F3 vs median_predictor: ΔMAE -0.054 [95% CI -0.351, +0.243]  t(49) = -0.36, p = 0.7175  (late_F3 better in 21/50)
+[baseline] functionals_ridge vs median_predictor: ΔMAE -0.021 [95% CI -0.318, +0.276]  t(49) = -0.14, p = 0.8870  (functionals_ridge better in 19/50)
+
+Sensitivity analysis: median of chunk predictions instead of the mean (not applicable: this rung predicts per person)
+
+wrote /home/muchiri/Projects/augmenting-mh-assessment/paper1/results/R4_edaic_20261007-145409

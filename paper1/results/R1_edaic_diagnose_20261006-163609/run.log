@@ -1,0 +1,20 @@
+R1_edaic_diagnose_20261006-163609 | commit 9cef102931 | 218 participants | 12149 chunks | 140 steps | device cuda
+PHQ-8 mean 6.66  median 5.00  SD 6.01
+capacity F2: late 14,273 vs early (h=41) 14,146  gap 0.9%
+capacity F3: late 19,425 vs early (h=49) 19,650  gap 1.2%
+
+  run  1/1  median_predictor=4.84  mean_predictor=5.14  functionals_ridge=5.02  au_only=4.81  gaze_only=5.10  pose_only=4.99  late_F2=4.89  early_F2=4.82  late_F3=5.05  early_F3=4.97  [38s]
+
+model              MAE              RMSE             R2 (fold)        R2 (pooled)
+median_predictor    4.841 ± 0.000    5.937 ± 0.000   -0.014 ± 0.000   n/a (incomplete repeat)
+mean_predictor      5.142 ± 0.000    5.922 ± 0.000   -0.009 ± 0.000   n/a (incomplete repeat)
+functionals_ridge   5.025 ± 0.000    5.839 ± 0.000   +0.019 ± 0.000   n/a (incomplete repeat)
+au_only             4.810 ± 0.000    5.832 ± 0.000   +0.021 ± 0.000   n/a (incomplete repeat)
+gaze_only           5.102 ± 0.000    5.954 ± 0.000   -0.020 ± 0.000   n/a (incomplete repeat)
+pose_only           4.989 ± 0.000    5.922 ± 0.000   -0.009 ± 0.000   n/a (incomplete repeat)
+late_F2             4.891 ± 0.000    5.851 ± 0.000   +0.015 ± 0.000   n/a (incomplete repeat)
+early_F2            4.817 ± 0.000    5.907 ± 0.000   -0.004 ± 0.000   n/a (incomplete repeat)
+late_F3             5.053 ± 0.000    5.913 ± 0.000   -0.006 ± 0.000   n/a (incomplete repeat)
+early_F3            4.969 ± 0.000    5.955 ± 0.000   -0.020 ± 0.000   n/a (incomplete repeat)
+
+wrote /home/muchiri/Projects/augmenting-mh-assessment/paper1/results/R1_edaic_diagnose_20261006-163609

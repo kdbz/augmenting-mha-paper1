@@ -1,0 +1,54 @@
+R1_synthetic_20261006-113819 | commit 37169bca2d | 200 participants | 1200 chunks | 40 steps | device cuda
+PHQ-8 mean 9.98  median 9.67  SD 3.89
+capacity F2: late 14,273 vs early (h=41) 14,146  gap 0.9%
+capacity F3: late 19,425 vs early (h=49) 19,650  gap 1.2%
+
+  run  1/5  median_predictor=2.43  mean_predictor=2.45  functionals_ridge=2.53  au_only=2.43  gaze_only=2.38  pose_only=2.42  late_F2=2.37  early_F2=1.55  late_F3=2.42  early_F3=1.92  [4s]
+  run  2/5  median_predictor=2.32  mean_predictor=2.38  functionals_ridge=2.39  au_only=2.35  gaze_only=2.34  pose_only=2.42  late_F2=2.34  early_F2=1.57  late_F3=2.34  early_F3=1.25  [7s]
+  run  3/5  median_predictor=2.49  mean_predictor=2.54  functionals_ridge=2.53  au_only=2.51  gaze_only=2.41  pose_only=2.54  late_F2=2.45  early_F2=1.85  late_F3=2.67  early_F3=1.77  [11s]
+  run  4/5  median_predictor=3.44  mean_predictor=3.39  functionals_ridge=3.16  au_only=3.52  gaze_only=3.29  pose_only=3.53  late_F2=3.39  early_F2=2.39  late_F3=3.45  early_F3=2.10  [15s]
+  run  5/5  median_predictor=3.41  mean_predictor=3.41  functionals_ridge=3.37  au_only=3.43  gaze_only=3.34  pose_only=3.42  late_F2=3.38  early_F2=3.06  late_F3=3.41  early_F3=2.94  [18s]
+
+model              MAE              RMSE             R2 (fold)        R2 (pooled)
+median_predictor    2.815 ± 0.556    3.821 ± 0.897   -0.028 ± 0.034   -0.011 ± 0.000
+mean_predictor      2.835 ± 0.520    3.836 ± 0.850   -0.041 ± 0.036   -0.014 ± 0.000
+functionals_ridge   2.797 ± 0.439    3.789 ± 0.820   -0.018 ± 0.061   +0.012 ± 0.000
+au_only             2.847 ± 0.577    3.869 ± 0.935   -0.052 ± 0.052   -0.039 ± 0.000
+gaze_only           2.752 ± 0.516    3.734 ± 0.838   +0.014 ± 0.062   +0.038 ± 0.000
+pose_only           2.865 ± 0.559    3.869 ± 0.917   -0.054 ± 0.045   -0.037 ± 0.000
+late_F2             2.786 ± 0.549    3.809 ± 0.889   -0.024 ± 0.088   -0.004 ± 0.000
+early_F2            2.083 ± 0.641    2.807 ± 0.945   +0.450 ± 0.170   +0.430 ± 0.000
+late_F3             2.859 ± 0.536    3.886 ± 0.869   -0.071 ± 0.127   -0.042 ± 0.000
+early_F3            1.997 ± 0.615    2.726 ± 0.877   +0.473 ± 0.172   +0.466 ± 0.000
+
+[primary] early_F3 vs late_F3: ΔMAE +0.862 [95% CI +0.157, +1.566]  t(4) = 3.40, p = 0.0274  (early_F3 better in 5/5)
+[secondary] early_F2 vs late_F2: ΔMAE +0.702 [95% CI +0.225, +1.180]  t(4) = 4.08, p = 0.0151  (early_F2 better in 5/5)
+[baseline] early_F2 vs median_predictor: ΔMAE +0.732 [95% CI +0.247, +1.216]  t(4) = 4.20, p = 0.0137  (early_F2 better in 5/5)  BEATS MEDIAN
+[baseline] late_F2 vs median_predictor: ΔMAE +0.030 [95% CI -0.017, +0.076]  t(4) = 1.77, p = 0.1506  (late_F2 better in 4/5)
+[baseline] early_F3 vs median_predictor: ΔMAE +0.818 [95% CI +0.122, +1.514]  t(4) = 3.26, p = 0.0310  (early_F3 better in 5/5)  BEATS MEDIAN
+[baseline] late_F3 vs median_predictor: ΔMAE -0.044 [95% CI -0.193, +0.106]  t(4) = -0.81, p = 0.4626  (late_F3 better in 1/5)
+[baseline] functionals_ridge vs median_predictor: ΔMAE +0.018 [95% CI -0.264, +0.300]  t(4) = 0.18, p = 0.8677  (functionals_ridge better in 2/5)
+[baseline] au_only vs median_predictor: ΔMAE -0.032 [95% CI -0.092, +0.029]  t(4) = -1.46, p = 0.2189  (au_only better in 0/5)
+[baseline] gaze_only vs median_predictor: ΔMAE +0.063 [95% CI -0.045, +0.171]  t(4) = 1.62, p = 0.1796  (gaze_only better in 4/5)
+[baseline] pose_only vs median_predictor: ΔMAE -0.050 [95% CI -0.130, +0.031]  t(4) = -1.72, p = 0.1610  (pose_only better in 1/5)
+[ablation] early_F2 vs au_only: ΔMAE +0.763 [95% CI +0.246, +1.281]  t(4) = 4.10, p = 0.0149  (early_F2 better in 5/5)
+[ablation] early_F3 vs early_F2: ΔMAE +0.086 [95% CI -0.430, +0.603]  t(4) = 0.46, p = 0.6663  (early_F3 better in 4/5)
+[ablation] late_F2 vs au_only: ΔMAE +0.061 [95% CI -0.018, +0.141]  t(4) = 2.14, p = 0.0996  (late_F2 better in 5/5)
+[ablation] late_F3 vs late_F2: ΔMAE -0.073 [95% CI -0.236, +0.089]  t(4) = -1.25, p = 0.2785  (late_F3 better in 0/5)
+
+Sensitivity analysis: median of chunk predictions instead of the mean
+  early_F3 vs late_F3: ΔMAE +0.856 [95% CI +0.167, +1.545]  p = 0.0260  (same verdict)
+  early_F2 vs late_F2: ΔMAE +0.694 [95% CI +0.207, +1.182]  p = 0.0167  (same verdict)
+  early_F2 vs median_predictor: ΔMAE +0.724 [95% CI +0.231, +1.216]  p = 0.0151  (same verdict)
+  late_F2 vs median_predictor: ΔMAE +0.029 [95% CI -0.016, +0.074]  p = 0.1439  (same verdict)
+  early_F3 vs median_predictor: ΔMAE +0.814 [95% CI +0.138, +1.490]  p = 0.0288  (same verdict)
+  late_F3 vs median_predictor: ΔMAE -0.042 [95% CI -0.183, +0.098]  p = 0.4500  (same verdict)
+  au_only vs median_predictor: ΔMAE -0.030 [95% CI -0.090, +0.029]  p = 0.2288  (same verdict)
+  gaze_only vs median_predictor: ΔMAE +0.065 [95% CI -0.047, +0.178]  p = 0.1831  (same verdict)
+  pose_only vs median_predictor: ΔMAE -0.050 [95% CI -0.132, +0.032]  p = 0.1667  (same verdict)
+  early_F2 vs au_only: ΔMAE +0.754 [95% CI +0.229, +1.279]  p = 0.0163  (same verdict)
+  early_F3 vs early_F2: ΔMAE +0.090 [95% CI -0.422, +0.603]  p = 0.6507  (same verdict)
+  late_F2 vs au_only: ΔMAE +0.060 [95% CI -0.022, +0.142]  p = 0.1133  (same verdict)
+  late_F3 vs late_F2: ΔMAE -0.072 [95% CI -0.228, +0.085]  p = 0.2723  (same verdict)
+
+wrote /home/muchiri/Projects/augmenting-mh-assessment/paper1/results/R1_synthetic_20261006-113819

@@ -1,0 +1,27 @@
+R5_synthetic_20261007-154049 | commit 09270db72f | 200 participants | 1200 chunks | 40 steps | device cuda
+PHQ-8 mean 9.98  median 9.67  SD 3.89
+capacity F2: late 70,533 vs early (h=44) 70,843  gap 0.4%
+capacity F3: late 101,831 vs early (h=53) 101,233  gap 0.6%
+
+  run  1/5  median_predictor=2.43  mean_predictor=2.45  functionals_ridge=2.53  late_F3=2.37  early_F3=1.32  [6s]
+  run  2/5  median_predictor=2.32  mean_predictor=2.38  functionals_ridge=2.39  late_F3=2.24  early_F3=1.44  [10s]
+  run  3/5  median_predictor=2.49  mean_predictor=2.54  functionals_ridge=2.53  late_F3=2.69  early_F3=1.71  [16s]
+  run  4/5  median_predictor=3.44  mean_predictor=3.39  functionals_ridge=3.16  late_F3=3.41  early_F3=1.78  [22s]
+  run  5/5  median_predictor=3.41  mean_predictor=3.41  functionals_ridge=3.37  late_F3=3.37  early_F3=2.16  [26s]
+
+model              MAE              RMSE             R2 (fold)        R2 (pooled)
+median_predictor    2.815 ± 0.556    3.821 ± 0.897   -0.028 ± 0.034   -0.011 ± 0.000
+mean_predictor      2.835 ± 0.520    3.836 ± 0.850   -0.041 ± 0.036   -0.014 ± 0.000
+functionals_ridge   2.797 ± 0.439    3.789 ± 0.820   -0.018 ± 0.061   +0.012 ± 0.000
+late_F3             2.813 ± 0.551    3.823 ± 0.962   -0.036 ± 0.220   -0.019 ± 0.000
+early_F3            1.681 ± 0.328    2.191 ± 0.482   +0.657 ± 0.065   +0.669 ± 0.000
+
+Only [primary] is confirmatory; every other test is uncorrected and read descriptively (§5).
+[primary] early_F3 vs late_F3: ΔMAE +1.132 [95% CI +0.543, +1.722]  t(4) = 5.33, p = 0.0059  (early_F3 better in 5/5)  MEANINGFUL
+[baseline] early_F3 vs median_predictor: ΔMAE +1.134 [95% CI +0.489, +1.779]  t(4) = 4.88, p = 0.0081  (early_F3 better in 5/5)  BEATS MEDIAN
+[baseline] late_F3 vs median_predictor: ΔMAE +0.002 [95% CI -0.216, +0.219]  t(4) = 0.02, p = 0.9849  (late_F3 better in 4/5)
+[baseline] functionals_ridge vs median_predictor: ΔMAE +0.018 [95% CI -0.264, +0.300]  t(4) = 0.18, p = 0.8677  (functionals_ridge better in 2/5)
+
+Sensitivity analysis: median of chunk predictions instead of the mean (not applicable: this rung predicts per person)
+
+wrote /home/muchiri/Projects/augmenting-mh-assessment/paper1/results/R5_synthetic_20261007-154049

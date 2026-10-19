@@ -1,0 +1,352 @@
+{
+ "run_id": "R5_synthetic_20261007-154049",
+ "rung": "R5",
+ "features": [
+  "F3"
+ ],
+ "data": "synthetic",
+ "git_commit": "09270db72ff22439fbcbe59cfec0e904a01f8546",
+ "n_participants": 200,
+ "n_chunks": 1200,
+ "runs": 5,
+ "capacity": {
+  "F2": {
+   "early_hidden": 44,
+   "late": 70533,
+   "early": 70843,
+   "gap": 0.004395105836984107
+  },
+  "F3": {
+   "early_hidden": 53,
+   "late": 101831,
+   "early": 101233,
+   "gap": 0.005872474983060168
+  }
+ },
+ "settings": {
+  "BATCH": 128,
+  "BROKEN": [
+   627
+  ],
+  "CACHE_DIR": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/cache",
+  "CAPACITY_TOL": 0.02,
+  "CHANNELS": {
+   "pose": 6,
+   "gaze": 8,
+   "au": 35
+  },
+  "CHUNK": 700,
+  "CHUNK_CACHE": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/cache/edaic_chunks.npz",
+  "CONF_MIN": 0.9,
+  "CV_SPLITS": [
+   "train",
+   "dev"
+  ],
+  "DATA_ROOT": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/../wwwedaic",
+  "FEATURE_SETS": {
+   "F2": [
+    "au",
+    "gaze"
+   ],
+   "F3": [
+    "au",
+    "gaze",
+    "pose"
+   ]
+  },
+  "HERE": "/home/muchiri/Projects/augmenting-mh-assessment/paper1",
+  "INNER_VAL": 0.15,
+  "IS_KAGGLE": false,
+  "LABEL_DIR": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/../wwwedaic/labels2019",
+  "LATE_HIDDEN": 32,
+  "LOSS": "l1",
+  "LR": 0.001,
+  "MAX_EPOCHS": 40,
+  "N_FOLDS": 5,
+  "N_REPEATS": 10,
+  "PATIENCE": 6,
+  "PERSON_BATCH": 16,
+  "PREREG_FILE": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/PREREGISTRATION.md",
+  "PRIMARY": "F3",
+  "RESULTS_DIR": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/results",
+  "RUNGS": {
+   "R1": {
+    "pooling": "last"
+   },
+   "R2": {
+    "pooling": "attention"
+   },
+   "R3": {
+    "pooling": "attention",
+    "aggregation": "attention"
+   },
+   "R4": {
+    "pooling": "attention",
+    "aggregation": "attention",
+    "bidirectional": true
+   },
+   "R5": {
+    "pooling": "attention",
+    "aggregation": "attention",
+    "bidirectional": true,
+    "heads": 2
+   }
+  },
+  "SEED": 0,
+  "SMALLEST_MEANINGFUL": 1.0,
+  "STRIDE": 489,
+  "SUBSAMPLE": 5,
+  "WEIGHT_DECAY": 0.0001
+ },
+ "provenance": {
+  "environment": {
+   "python": "3.12.3",
+   "numpy": "2.2.6",
+   "torch": "2.4.1+cu121",
+   "sklearn": "1.5.2",
+   "cuda": "12.1",
+   "cudnn": 90100,
+   "device": "NVIDIA GeForce RTX 2050",
+   "host": "local"
+  },
+  "seed": 0,
+  "wall_seconds": 26,
+  "prereg_sha256": "30c5bc312b023088018eab5323059b5882d3aa37b0d96196d41aa9076abe83e7"
+ },
+ "results": {
+  "median_predictor": {
+   "mae": [
+    2.4251773357391357,
+    2.3230483531951904,
+    2.485079526901245,
+    3.4352633953094482,
+    3.4067065715789795
+   ],
+   "rmse": [
+    3.1239044666290283,
+    3.0352940559387207,
+    3.3585548400878906,
+    4.835899829864502,
+    4.752580642700195
+   ],
+   "r2": [
+    -1.3232231140136719e-05,
+    -0.00020205974578857422,
+    -0.02587294578552246,
+    -0.0837864875793457,
+    -0.03144538402557373
+   ],
+   "epochs": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "r2_pooled": [
+    -0.011143772482651082
+   ]
+  },
+  "mean_predictor": {
+   "mae": [
+    2.446497917175293,
+    2.384174346923828,
+    2.541144609451294,
+    3.3888049125671387,
+    3.4131298065185547
+   ],
+   "rmse": [
+    3.150123357772827,
+    3.0548763275146484,
+    3.4740242958068848,
+    4.771032333374023,
+    4.731842041015625
+   ],
+   "r2": [
+    -0.016869783401489258,
+    -0.013149380683898926,
+    -0.0976259708404541,
+    -0.054906249046325684,
+    -0.022463202476501465
+   ],
+   "epochs": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "r2_pooled": [
+    -0.014497757414062562
+   ]
+  },
+  "functionals_ridge": {
+   "mae": [
+    2.533142566680908,
+    2.392538547515869,
+    2.5251471996307373,
+    3.1639602184295654,
+    3.370450496673584
+   ],
+   "rmse": [
+    3.11924147605896,
+    2.993922472000122,
+    3.511328935623169,
+    4.584754943847656,
+    4.737036228179932
+   ],
+   "r2": [
+    0.002970099449157715,
+    0.026877939701080322,
+    -0.12132549285888672,
+    0.0258600115776062,
+    -0.024709105491638184
+   ],
+   "epochs": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "r2_pooled": [
+    0.011970733214139884
+   ]
+  },
+  "late_F3": {
+   "mae": [
+    2.365901470184326,
+    2.235339879989624,
+    2.6882786750793457,
+    3.4099998474121094,
+    3.3678696155548096
+   ],
+   "rmse": [
+    2.9442155361175537,
+    2.746323585510254,
+    3.9043192863464355,
+    4.817880153656006,
+    4.704563617706299
+   ],
+   "r2": [
+    0.1117209792137146,
+    0.1811777949333191,
+    -0.3863704204559326,
+    -0.07572484016418457,
+    -0.010708451271057129
+   ],
+   "epochs": [
+    9,
+    7,
+    10,
+    8,
+    7
+   ],
+   "r2_pooled": [
+    -0.01876691568947808
+   ]
+  },
+  "early_F3": {
+   "mae": [
+    1.3206262588500977,
+    1.4379851818084717,
+    1.7092777490615845,
+    1.7757976055145264,
+    2.161924362182617
+   ],
+   "rmse": [
+    1.6734974384307861,
+    1.7318072319030762,
+    2.233158826828003,
+    2.5872063636779785,
+    2.730205774307251
+   ],
+   "r2": [
+    0.7130142450332642,
+    0.6743993163108826,
+    0.5464471578598022,
+    0.6897932291030884,
+    0.6596090793609619
+   ],
+   "epochs": [
+    19,
+    14,
+    27,
+    32,
+    16
+   ],
+   "r2_pooled": [
+    0.6692371903590695
+   ]
+  }
+ },
+ "sensitivity_median": {
+  "late_F3": {
+   "mae": [],
+   "rmse": [],
+   "r2": [],
+   "r2_pooled": []
+  },
+  "early_F3": {
+   "mae": [],
+   "rmse": [],
+   "r2": [],
+   "r2_pooled": []
+  }
+ },
+ "subgroups": {},
+ "tests": {
+  "early_F3_vs_late_F3": {
+   "delta_mae": 1.1323556661605836,
+   "ci95": [
+    0.5429472276437911,
+    1.721764104677376
+   ],
+   "t": 5.3340317871356255,
+   "p": 0.0059491055799941765,
+   "n_runs": 5,
+   "a_wins": 5,
+   "role": "primary",
+   "meaningful": true
+  },
+  "early_F3_vs_median_predictor": {
+   "delta_mae": 1.1339328050613404,
+   "ci95": [
+    0.48906140339940296,
+    1.7788042067232779
+   ],
+   "t": 4.882062033022533,
+   "p": 0.008148491862299576,
+   "n_runs": 5,
+   "a_wins": 5,
+   "role": "baseline",
+   "meaningful": true
+  },
+  "late_F3_vs_median_predictor": {
+   "delta_mae": 0.001577138900756836,
+   "ci95": [
+    -0.21608485948436063,
+    0.2192391372858743
+   ],
+   "t": 0.020117611772890693,
+   "p": 0.9849130632173334,
+   "n_runs": 5,
+   "a_wins": 4,
+   "role": "baseline",
+   "meaningful": false
+  },
+  "functionals_ridge_vs_median_predictor": {
+   "delta_mae": 0.018007230758666993,
+   "ci95": [
+    -0.26351538747006453,
+    0.29952984898739854
+   ],
+   "t": 0.17759172606673965,
+   "p": 0.867674182250392,
+   "n_runs": 5,
+   "a_wins": 2,
+   "role": "baseline",
+   "meaningful": false
+  }
+ }
+}

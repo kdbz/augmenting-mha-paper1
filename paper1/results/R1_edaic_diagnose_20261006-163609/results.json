@@ -1,0 +1,347 @@
+{
+ "run_id": "R1_edaic_diagnose_20261006-163609",
+ "rung": "R1",
+ "features": [
+  "F2",
+  "F3"
+ ],
+ "data": "edaic",
+ "git_commit": "9cef1029315632a094780ebb976a0e10f1147e8b",
+ "n_participants": 218,
+ "n_chunks": 12149,
+ "runs": 1,
+ "capacity": {
+  "F2": {
+   "early_hidden": 41,
+   "late": 14273,
+   "early": 14146,
+   "gap": 0.008897919148041757
+  },
+  "F3": {
+   "early_hidden": 49,
+   "late": 19425,
+   "early": 19650,
+   "gap": 0.011583011583011582
+  }
+ },
+ "settings": {
+  "BATCH": 128,
+  "BROKEN": [
+   627
+  ],
+  "CACHE_DIR": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/cache",
+  "CAPACITY_TOL": 0.02,
+  "CHANNELS": {
+   "pose": 6,
+   "gaze": 8,
+   "au": 35
+  },
+  "CHUNK": 700,
+  "CHUNK_CACHE": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/cache/edaic_chunks.npz",
+  "CONF_MIN": 0.9,
+  "CV_SPLITS": [
+   "train",
+   "dev"
+  ],
+  "DATA_ROOT": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/../wwwedaic",
+  "FEATURE_SETS": {
+   "F2": [
+    "au",
+    "gaze"
+   ],
+   "F3": [
+    "au",
+    "gaze",
+    "pose"
+   ]
+  },
+  "HERE": "/home/muchiri/Projects/augmenting-mh-assessment/paper1",
+  "INNER_VAL": 0.15,
+  "IS_KAGGLE": false,
+  "LABEL_DIR": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/../wwwedaic/labels2019",
+  "LATE_HIDDEN": 32,
+  "LOSS": "l1",
+  "LR": 0.001,
+  "MAX_EPOCHS": 40,
+  "N_FOLDS": 5,
+  "N_REPEATS": 10,
+  "PATIENCE": 6,
+  "PREREG_FILE": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/PREREGISTRATION.md",
+  "PRIMARY": "F3",
+  "RESULTS_DIR": "/home/muchiri/Projects/augmenting-mh-assessment/paper1/results",
+  "RUNGS": {
+   "R1": {
+    "pooling": "last"
+   }
+  },
+  "SEED": 0,
+  "SMALLEST_MEANINGFUL": 1.0,
+  "STRIDE": 489,
+  "SUBSAMPLE": 5,
+  "WEIGHT_DECAY": 0.0001
+ },
+ "provenance": {
+  "environment": {
+   "python": "3.12.3",
+   "numpy": "2.2.6",
+   "torch": "2.4.1+cu121",
+   "sklearn": "1.5.2",
+   "cuda": "12.1",
+   "cudnn": 90100,
+   "device": "NVIDIA GeForce RTX 2050",
+   "host": "local"
+  },
+  "seed": 0,
+  "wall_seconds": 38,
+  "prereg_sha256": "30c5bc312b023088018eab5323059b5882d3aa37b0d96196d41aa9076abe83e7",
+  "cache_sha256": "43d316799e73c6798e7045e61b2ee205c7d3fe7d354a63dd97205ad2c3fa7bb1",
+  "label_sha256": {
+   "train": "047c0db53b09d314000943b01c9875487d28353107b57ff3af5352389fb81f84",
+   "dev": "a5e25e22cbb09964f9bf605aff056060de8440240235d2b777ee7e729089e566",
+   "test": "22b6c23a9e5b7b2fecf3853ef4dcbd9890831f0ce323dad47bf7d1da021aaad3"
+  },
+  "excluded_participants": [
+   627
+  ]
+ },
+ "results": {
+  "median_predictor": {
+   "mae": [
+    4.840909004211426
+   ],
+   "rmse": [
+    5.93717098236084
+   ],
+   "r2": [
+    -0.014283061027526855
+   ],
+   "epochs": [
+    null
+   ],
+   "r2_pooled": []
+  },
+  "mean_predictor": {
+   "mae": [
+    5.141849040985107
+   ],
+   "rmse": [
+    5.922287464141846
+   ],
+   "r2": [
+    -0.00920403003692627
+   ],
+   "epochs": [
+    null
+   ],
+   "r2_pooled": []
+  },
+  "functionals_ridge": {
+   "mae": [
+    5.024593830108643
+   ],
+   "rmse": [
+    5.838665008544922
+   ],
+   "r2": [
+    0.019094407558441162
+   ],
+   "epochs": [
+    null
+   ],
+   "r2_pooled": []
+  },
+  "au_only": {
+   "mae": [
+    4.809817790985107
+   ],
+   "rmse": [
+    5.832253456115723
+   ],
+   "r2": [
+    0.021247506141662598
+   ],
+   "epochs": [
+    7
+   ],
+   "r2_pooled": []
+  },
+  "gaze_only": {
+   "mae": [
+    5.101508617401123
+   ],
+   "rmse": [
+    5.953995704650879
+   ],
+   "r2": [
+    -0.020039677619934082
+   ],
+   "epochs": [
+    12
+   ],
+   "r2_pooled": []
+  },
+  "pose_only": {
+   "mae": [
+    4.989483833312988
+   ],
+   "rmse": [
+    5.921962261199951
+   ],
+   "r2": [
+    -0.009093284606933594
+   ],
+   "epochs": [
+    14
+   ],
+   "r2_pooled": []
+  },
+  "late_F2": {
+   "mae": [
+    4.890864849090576
+   ],
+   "rmse": [
+    5.850902557373047
+   ],
+   "r2": [
+    0.014978468418121338
+   ],
+   "epochs": [
+    7
+   ],
+   "r2_pooled": []
+  },
+  "early_F2": {
+   "mae": [
+    4.817228317260742
+   ],
+   "rmse": [
+    5.907068729400635
+   ],
+   "r2": [
+    -0.004024028778076172
+   ],
+   "epochs": [
+    7
+   ],
+   "r2_pooled": []
+  },
+  "late_F3": {
+   "mae": [
+    5.053379058837891
+   ],
+   "rmse": [
+    5.913353443145752
+   ],
+   "r2": [
+    -0.00616145133972168
+   ],
+   "epochs": [
+    7
+   ],
+   "r2_pooled": []
+  },
+  "early_F3": {
+   "mae": [
+    4.969246864318848
+   ],
+   "rmse": [
+    5.954623222351074
+   ],
+   "r2": [
+    -0.02025473117828369
+   ],
+   "epochs": [
+    7
+   ],
+   "r2_pooled": []
+  }
+ },
+ "sensitivity_median": {
+  "au_only": {
+   "mae": [
+    4.816303730010986
+   ],
+   "rmse": [
+    5.8462324142456055
+   ],
+   "r2": [
+    0.01655024290084839
+   ],
+   "r2_pooled": []
+  },
+  "gaze_only": {
+   "mae": [
+    5.111327648162842
+   ],
+   "rmse": [
+    5.954216480255127
+   ],
+   "r2": [
+    -0.020115375518798828
+   ],
+   "r2_pooled": []
+  },
+  "pose_only": {
+   "mae": [
+    5.056169033050537
+   ],
+   "rmse": [
+    5.980788230895996
+   ],
+   "r2": [
+    -0.02924060821533203
+   ],
+   "r2_pooled": []
+  },
+  "late_F2": {
+   "mae": [
+    4.90216588973999
+   ],
+   "rmse": [
+    5.868490219116211
+   ],
+   "r2": [
+    0.009047508239746094
+   ],
+   "r2_pooled": []
+  },
+  "early_F2": {
+   "mae": [
+    4.85029411315918
+   ],
+   "rmse": [
+    5.940687656402588
+   ],
+   "r2": [
+    -0.015484929084777832
+   ],
+   "r2_pooled": []
+  },
+  "late_F3": {
+   "mae": [
+    5.065764904022217
+   ],
+   "rmse": [
+    5.92922830581665
+   ],
+   "r2": [
+    -0.011571168899536133
+   ],
+   "r2_pooled": []
+  },
+  "early_F3": {
+   "mae": [
+    5.069828510284424
+   ],
+   "rmse": [
+    6.051215171813965
+   ],
+   "r2": [
+    -0.05362296104431152
+   ],
+   "r2_pooled": []
+  }
+ },
+ "subgroups": {},
+ "tests": {}
+}

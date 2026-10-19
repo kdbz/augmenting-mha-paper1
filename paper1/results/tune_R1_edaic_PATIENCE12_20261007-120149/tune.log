@@ -1,0 +1,20 @@
+tune_R1_edaic_PATIENCE12_20261007-120149 | commit 932e685fb2 | 218 participants | folds 5 | pre-registered levers only
+settings: LR=0.001, WEIGHT_DECAY=0.0001, MAX_EPOCHS=40, PATIENCE=12
+inner validation only; outer test folds are not scored
+
+  fold 1/5  au_only=5.07@20  gaze_only=5.36@16  pose_only=5.37@14  late_F2=5.31@0  early_F2=5.36@0  late_F3=5.38@0  early_F3=5.22@0  [68s]
+  fold 2/5  au_only=4.36@1  gaze_only=4.42@32  pose_only=3.87@9  late_F2=4.43@1  early_F2=3.94@6  late_F3=4.18@2  early_F3=4.33@1  [137s]
+  fold 3/5  au_only=5.01@1  gaze_only=4.70@29  pose_only=4.37@8  late_F2=4.93@9  early_F2=5.07@2  late_F3=4.75@12  early_F3=4.54@4  [214s]
+  fold 4/5  au_only=5.36@0  gaze_only=5.49@0  pose_only=5.00@20  late_F2=5.14@8  early_F2=5.32@0  late_F3=5.39@1  early_F3=5.34@11  [286s]
+  fold 5/5  au_only=4.03@0  gaze_only=3.87@5  pose_only=4.26@0  late_F2=3.96@10  early_F2=4.01@0  late_F3=4.08@0  early_F3=4.10@0  [348s]
+
+model         best val MAE  best epoch  epoch>0
+au_only              4.765         4.4     3/5
+gaze_only            4.768        16.4     4/5
+pose_only            4.573        10.2     4/5
+late_F2              4.755         5.6     4/5
+early_F2             4.741         1.6     2/5
+late_F3              4.755         3.0     3/5
+early_F3             4.708         3.2     3/5
+
+all networks: mean best inner-validation MAE 4.723  [348s]

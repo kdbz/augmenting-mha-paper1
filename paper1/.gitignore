@@ -1,0 +1,6 @@
+__pycache__/
+cache/
+SNAPSHOT
+results/*/checkpoints/
+results/*/predictions.csv
+results/*/chunk_predictions.npz

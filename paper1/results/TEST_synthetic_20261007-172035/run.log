@@ -1,0 +1,47 @@
+TEST_synthetic_20261007-172035 | commit 0205c662fb | train 160 people | test 40 people | device cuda
+  R1_late_F3   trained, 7 epochs  [3s]
+  R1_early_F3  trained, 27 epochs  [3s]
+  R2_late_F3   trained, 7 epochs  [5s]
+  R2_early_F3  trained, 24 epochs  [6s]
+  R3_late_F3   trained, 7 epochs  [8s]
+  R3_early_F3  trained, 19 epochs  [9s]
+  R4_late_F3   trained, 7 epochs  [14s]
+  R4_early_F3  trained, 21 epochs  [15s]
+  R5_late_F3   trained, 7 epochs  [24s]
+  R5_early_F3  trained, 11 epochs  [25s]
+
+model                   MAE    RMSE       R2
+median_predictor      2.110   2.678   -0.012
+mean_predictor        2.132   2.767   -0.080
+functionals_ridge     2.027   2.753   -0.070
+R1_late_F3            2.092   2.675   -0.010
+R1_early_F3           1.565   1.902   +0.490
+R2_late_F3            2.097   2.665   -0.002
+R2_early_F3           1.393   1.721   +0.582
+R3_late_F3            2.099   2.682   -0.015
+R3_early_F3           1.470   1.923   +0.478
+R4_late_F3            2.098   2.687   -0.019
+R4_early_F3           1.478   1.798   +0.544
+R5_late_F3            2.145   2.755   -0.071
+R5_early_F3           1.371   1.742   +0.572
+
+Descriptive paired bootstrap over test people (positive = first model better), 95% interval:
+  R1_early_F3 vs R1_late_F3: ΔMAE +0.527 [+0.063, +0.983]
+  R1_early_F3 vs median_predictor: ΔMAE +0.545 [+0.094, +0.998]
+  R1_late_F3 vs median_predictor: ΔMAE +0.018 [-0.011, +0.046]
+  R2_early_F3 vs R2_late_F3: ΔMAE +0.704 [+0.199, +1.219]
+  R2_early_F3 vs median_predictor: ΔMAE +0.716 [+0.209, +1.232]
+  R2_late_F3 vs median_predictor: ΔMAE +0.012 [-0.005, +0.030]
+  R3_early_F3 vs R3_late_F3: ΔMAE +0.629 [+0.112, +1.132]
+  R3_early_F3 vs median_predictor: ΔMAE +0.640 [+0.126, +1.140]
+  R3_late_F3 vs median_predictor: ΔMAE +0.011 [-0.012, +0.034]
+  R4_early_F3 vs R4_late_F3: ΔMAE +0.620 [+0.126, +1.118]
+  R4_early_F3 vs median_predictor: ΔMAE +0.632 [+0.143, +1.124]
+  R4_late_F3 vs median_predictor: ΔMAE +0.012 [-0.019, +0.041]
+  R5_early_F3 vs R5_late_F3: ΔMAE +0.773 [+0.238, +1.303]
+  R5_early_F3 vs median_predictor: ΔMAE +0.738 [+0.207, +1.266]
+  R5_late_F3 vs median_predictor: ΔMAE -0.035 [-0.343, +0.266]
+
+Verdict model (§5): F3 on R5. Early 1.371, late 2.145, median predictor 2.110 (MAE on 40 test people).
+
+wrote /home/muchiri/Projects/augmenting-mh-assessment/paper1/results/TEST_synthetic_20261007-172035

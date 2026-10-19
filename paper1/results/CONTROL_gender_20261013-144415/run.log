@@ -1,0 +1,31 @@
+CONTROL_gender_20261013-144415 | commit 34ed1b9741 (script itself uncommitted) | 218 participants | 12149 chunks | female 92, male 126 | POST HOC
+  R1_late_F3       fold 1/5  AUC 0.797  acc 0.727  MAE 0.277  epochs 9
+  R1_late_F3       fold 2/5  AUC 0.865  acc 0.773  MAE 0.285  epochs 13
+  R1_late_F3       fold 3/5  AUC 0.738  acc 0.659  MAE 0.323  epochs 11
+  R1_late_F3       fold 4/5  AUC 0.827  acc 0.744  MAE 0.273  epochs 9
+  R1_late_F3       fold 5/5  AUC 0.800  acc 0.698  MAE 0.304  epochs 15
+  R1_early_F3      fold 1/5  AUC 0.844  acc 0.773  MAE 0.250  epochs 9
+  R1_early_F3      fold 2/5  AUC 0.855  acc 0.750  MAE 0.270  epochs 9
+  R1_early_F3      fold 3/5  AUC 0.756  acc 0.727  MAE 0.278  epochs 11
+  R1_early_F3      fold 4/5  AUC 0.894  acc 0.814  MAE 0.213  epochs 13
+  R1_early_F3      fold 5/5  AUC 0.702  acc 0.674  MAE 0.326  epochs 20
+  R5_late_F3       fold 1/5  AUC 0.844  acc 0.795  MAE 0.330  epochs 13
+  R5_late_F3       fold 2/5  AUC 0.878  acc 0.750  MAE 0.321  epochs 13
+  R5_late_F3       fold 3/5  AUC 0.783  acc 0.705  MAE 0.353  epochs 21
+  R5_late_F3       fold 4/5  AUC 0.874  acc 0.791  MAE 0.321  epochs 14
+  R5_late_F3       fold 5/5  AUC 0.823  acc 0.721  MAE 0.337  epochs 12
+  R5_early_F3      fold 1/5  AUC 0.788  acc 0.705  MAE 0.361  epochs 8
+  R5_early_F3      fold 2/5  AUC 0.846  acc 0.773  MAE 0.357  epochs 11
+  R5_early_F3      fold 3/5  AUC 0.792  acc 0.750  MAE 0.330  epochs 19
+  R5_early_F3      fold 4/5  AUC 0.864  acc 0.744  MAE 0.322  epochs 11
+  R5_early_F3      fold 5/5  AUC 0.833  acc 0.721  MAE 0.343  epochs 12
+
+model               AUC mean  AUC pooled  accuracy     MAE
+median_predictor       0.500       0.500     0.578   0.422
+functionals_ridge      0.851       0.852     0.789   0.345
+R1_late_F3             0.805       0.800     0.720   0.292
+R1_early_F3            0.810       0.815     0.748   0.267
+R5_late_F3             0.841       0.842     0.752   0.332
+R5_early_F3            0.824       0.823     0.738   0.343
+
+629 s -> /home/muchiri/Projects/augmenting-mh-assessment/paper1/results/CONTROL_gender_20261013-144415
