@@ -11,7 +11,7 @@ The two designs are capacity-matched on five recurrent architectures (R1 to R5).
 
 **Result:** neither design beat both constant predictors, in cross-validation or on test, so the two designs could not be ranked.
 
-This repository is a snapshot without the development history. The analysis code is exactly as frozen on 7 October 2026 (commit `e25ff75`), before the official test partition was scored. The only additions after the freeze are the result files of three later runs (tuning, the single official test evaluation, and a post hoc positive control) and the script for that control.
+This repository is a snapshot without the development history. The analysis code is exactly as frozen on 7 October 2026 (commit `e25ff75`), before the official test partition was scored. The only additions after the freeze are the result files of three later runs (tuning, the single official test evaluation, and a post hoc positive control), the script for that control, and a post hoc check of prediction spread (added 5 November 2026) that reads the stored cross-validation predictions without refitting any model.
 
 ## Contents
 
@@ -28,6 +28,7 @@ This repository is a snapshot without the development history. The analysis code
 | `paper1/tune.py` | Tuning on inner-validation folds only; outer test folds are never scored |
 | `paper1/test_once.py` | The single official test evaluation: retrains on train + development, scores the 56 test participants once |
 | `paper1/positive_control.py` | Post hoc real-data positive control (gender as the target), aggregate output only |
+| `paper1/prediction_spread.py` | Post hoc check of how much predictions vary within each fold (Table 4); reads stored cross-validation predictions, no refitting; output in `paper1/results/prediction_spread.txt` |
 | `paper1/results/` | Aggregate results, learning curves and logs for every run reported in the paper |
 | `requirements.txt` | Python environment |
 

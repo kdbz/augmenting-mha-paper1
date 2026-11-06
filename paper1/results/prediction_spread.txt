@@ -1,0 +1,11 @@
+# Output of prediction_spread.py on the cross-validation predictions (aggregates only), 5 Nov 2026
+R1 early_F3: folds 50, median SD 1.52, range 0.93-2.97, folds SD<0.5: 0, observed SD median 5.90
+R1 late_F3: folds 50, median SD 1.55, range 0.51-2.86, folds SD<0.5: 0, observed SD median 5.90
+R2 early_F3: folds 50, median SD 1.69, range 1.18-3.48, folds SD<0.5: 0, observed SD median 5.90
+R2 late_F3: folds 50, median SD 1.60, range 0.55-3.40, folds SD<0.5: 0, observed SD median 5.90
+R3 early_F3: folds 50, median SD 0.94, range 0.07-3.45, folds SD<0.5: 19, observed SD median 5.90
+R3 late_F3: folds 50, median SD 0.78, range 0.04-3.09, folds SD<0.5: 22, observed SD median 5.90
+R4 early_F3: folds 50, median SD 1.01, range 0.09-4.26, folds SD<0.5: 18, observed SD median 5.90
+R4 late_F3: folds 50, median SD 0.92, range 0.04-3.19, folds SD<0.5: 20, observed SD median 5.90
+R5 early_F3: folds 50, median SD 1.41, range 0.48-3.44, folds SD<0.5: 1, observed SD median 5.90
+R5 late_F3: folds 50, median SD 1.42, range 0.54-3.15, folds SD<0.5: 0, observed SD median 5.90
